@@ -28,7 +28,7 @@ const Popular = () => {
         <h1 className="text-4xl font-extrabold md:text-4xl lg:text-6xl md:w-[60%] mx-auto">
           FRESH AIR
         </h1>
-        <p className="w-[100%] md:w-[70%] mx-auto font-bold mt-4 text-sm lg:text-lg text-gray-500">
+        <p className="w-[100%] md:w-[70%] lg:w-[30%] mx-auto mt-4 text-sm lg:text-base text-gray-500">
           With its heritage track look and innovative Air design, the Air Max SC
           brings iconic comfort to your everyday style.
         </p>

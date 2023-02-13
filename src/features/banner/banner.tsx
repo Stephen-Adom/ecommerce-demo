@@ -7,7 +7,7 @@ const Banner = () => {
         <h1 className="text-2xl font-extrabold md:text-4xl lg:text-6xl md:w-[60%] mx-auto">
           INTRODUCTING THE NEW NIKE INVINCIBLE 3
         </h1>
-        <p className="w-[100%] md:w-[70%] mx-auto font-bold mt-4 lg:text-lg text-gray-500">
+        <p className="w-[100%] md:w-[70%] mx-auto mt-4 lg:text-base text-gray-500">
           ZoomX cushioning designed to help you stay on your feet today,
           tomorrow, and beyond
         </p>
