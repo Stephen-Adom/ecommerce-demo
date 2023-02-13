@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@layer base {
+  html,
+  body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  nav {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  nav.active {
+    @apply z-10 bg-white shadow-xl;
+  }
+  .navbar-nav li a {
+    @apply text-base;
+  }
+
+  .headline-unit {
+    @apply w-full min-h-[200px] sm:min-h-[200px] md:min-h-[600px] lg:min-h-[700px] flex items-center justify-center overflow-hidden transition-all duration-300 ease-in-out;
+  }
+
+  .headline-unit:hover {
+    @apply cursor-pointer;
+  }
+
+  .headline-unit .unit-content {
+    @apply w-[80%] mx-auto flex items-center justify-center relative;
+  }
+
+  .headline-unit .unit-content h1 {
+    @apply text-5xl transition-all duration-300 ease-in-out sm:text-5xl md:text-7xl lg:text-8xl;
+  }
+
+  .headline-unit .unit-content img {
+    @apply w-[55%] md:w-[100%] lg:w-[95%] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] transition-all duration-300 ease-in-out;
+  }
+}
+
+#ad_banner {
+  background-image: url('./assets/images/Rectangle_5778.png');
+}
+
+form input::placeholder {
+  font-size: 14px;
+  color: rgb(105, 105, 105);
+}
+
+.headline-unit.active {
+  width: 216rem;
+}
+
+.headline-unit.active .unit-content img {
+  width: 50%;
+  transform: translate(-50%, -50%) rotateZ(31deg);
+}
+
+.headline-unit.active .unit-content h1 {
+  font-size: 14em;
+}
+
+@media (max-width: 640px) {
+  .headline-unit.active .unit-content img {
+    width: 6%;
+    transform: translate(-50%, -50%) rotateZ(31deg);
+  }
+
+  .headline-unit.active .unit-content h1 {
+    font-size: 6em;
+  }
+}
